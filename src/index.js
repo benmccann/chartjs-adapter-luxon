@@ -64,7 +64,7 @@ _adapters._date.override({
 	},
 
 	diff: function(max, min, unit) {
-		return this._create(max).diff(this._create(min)).as(unit).valueOf();
+		return this._create(max).diff(this._create(min), unit).valueOf();
 	},
 
 	startOf: function(time, unit, weekday) {
